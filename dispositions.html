@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Call Disposition Guide</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+      body {
+        font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Arial, sans-serif;
+        background-color: #f4f7f9;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      .table-container {
+        width: 100%;
+        max-width: 1200px;
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        border: 1px solid #e0e0e0;
+      }
+      .header {
+        background-color: #005a9c; /* Professional blue */
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      h1 {
+        margin: 0;
+        font-size: 1.8em;
+        font-weight: 700;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 18px 20px;
+        text-align: left;
+        border-bottom: 1px solid #e0e0e0;
+      }
+      th {
+        background-color: #f8f9fa;
+        color: #343a40;
+        font-weight: 500;
+        font-size: 0.9em;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+      tr:last-child td {
+        border-bottom: none;
+      }
+      tr:hover {
+        background-color: #f1f1f1;
+      }
+      .disposition {
+        font-weight: 700;
+        color: #005a9c;
+      }
+      .icon {
+        margin-right: 8px;
+        font-size: 1.2em;
+        vertical-align: middle;
+      }
+      .positive {
+        color: #28a745;
+      }
+      .negative {
+        color: #dc3545;
+      }
+      .neutral {
+        color: #ffc107;
+      }
+      .info {
+        color: #17a2b8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="table-container">
+      <div class="header">
+        <h1>Call Disposition Reference Guide</h1>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Disposition</th>
+            <th>Description</th>
+            <th>Examples</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="disposition">
+              <span class="icon neutral"></span>NO ANSWER / VOICEMAIL
+            </td>
+            <td>
+              The call was not answered by a person or went directly to a
+              voicemail service.
+            </td>
+            <td>
+              - Phone rings multiple times with no pickup.<br />- "Hi, you've
+              reached..." message plays.
+            </td>
+          </tr>
+          <tr>
+            <td class="disposition">
+              <span class="icon negative"></span>HANG UP BEFORE PITCH
+            </td>
+            <td>
+              The contact answers but hangs up the phone before the agent can
+              deliver the full introduction or value proposition.
+            </td>
+            <td>
+              - Agent: "Hi, my name is..." *click*<br />- Contact answers, hears
+              a pause, and hangs up.
+            </td>
+          </tr>
+          <tr>
+            <td class="disposition">
+              <span class="icon negative"></span>WRONG NUMBER
+            </td>
+            <td>
+              The person who answered is not the intended contact or homeowner
+              on the lead list.
+            </td>
+            <td>
+              - "John Smith doesn't live here anymore."<br />- "This is a
+              business line."
+            </td>
+          </tr>
+          <tr>
+            <td class="disposition">
+              <span class="icon negative"></span>BAD LEAD
+            </td>
+            <td>
+              The lead is invalid for reasons other than a wrong number. They do
+              not meet the core qualifying criteria for the campaign.
+            </td>
+            <td>
+              - "I live in an apartment / I'm a renter."<br />- "My house has a
+              metal/tile roof, not shingles."<br />- "I work for a roofing
+              company."
+            </td>
+          </tr>
+          <tr>
+            <td class="disposition">
+              <span class="icon info"></span>DNC (Do Not Call)
+            </td>
+            <td>
+              The contact explicitly requests to be removed from the calling
+              list and not be contacted again.
+            </td>
+            <td>
+              - "Please put me on your do not call list."<br />- "Stop calling
+              this number."
+            </td>
+          </tr>
+          <tr>
+            <td class="disposition">
+              <span class="icon negative"></span>UNDER AGED ROOF
+            </td>
+            <td>
+              The lead's roof is too new to qualify for the inspection service
+              based on campaign requirements.
+            </td>
+            <td>
+              - "We just had our roof replaced last year."<br />- "My roof is
+              only 3 years old."
+            </td>
+          </tr>
+          <tr>
+            <td class="disposition">
+              <span class="icon neutral"></span>NOT INTERESTED
+            </td>
+            <td>
+              The contact has heard the agent's pitch but declines the offer.
+            </td>
+            <td>
+              - "Thanks, but I'm not interested at this time."<br />- "I'm fine,
+              thanks!."
+            </td>
+          </tr>
+          <tr>
+            <td class="disposition positive">
+              <span class="icon positive"></span>APPOINTMENT SET / GOOD LEAD
+            </td>
+            <td>
+              The lead is qualified, interested, and has successfully scheduled
+              a date and time for the roof inspection.
+            </td>
+            <td>
+              - "Yes, Tuesday at 2 PM works perfectly for me."<br />- All
+              scheduling details confirmed on the call.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
